@@ -1,20 +1,7 @@
-tree_builder:
-  enabled: true
-  script: '#! /usr/bin/env bash
-
-    echo ''[{"path": "tf/tf.tf"}]''
-
-    '
-config_builder:
-  enabled: true
-  script: '#! /usr/bin/env bash
-
-    echo ''{}''
-
-    '
 drift:
-  enabled: true
-  reconcile: true
+  enabled: false
   schedule: hourly
 engine:
   name: tofu
+destination_branches:
+  - non-default-branch
