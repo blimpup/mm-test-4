@@ -5,7 +5,6 @@ dirs:
   svc:
     when_modified:
       file_patterns: ['${DIR}/*']
-      depends_on: "net.ip in outputs:cfg"
 engine:
   name: custom
   init: ['echo', 'init']
