@@ -1,5 +1,6 @@
-# An open pull request whose apply fails, so that the test can push a file of no directory and
-# see the failed apply check of the dirspace written again on the new head (RFD 2356).
-
+drift:
+  enabled: false
+  reconcile: true
+  schedule: hourly
 engine:
   name: tofu
